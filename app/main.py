@@ -1,8 +1,7 @@
 """Генератор приветствий."""
-import pprint
 
 
-def Greeting(name: str) -> str:
+def greeting(name: str) -> str:
     """Возвращает текст приветствия.
 
     Args:
@@ -11,6 +10,5 @@ def Greeting(name: str) -> str:
     Returns:
         str: Текст приветствия
     """
-    new_name = " ".join([n[0].upper() + n[1:] for n in name.split()])
-    # pprint.pprint(name.lower())
+    new_name = ' '.join([n[0].upper() + n[1:] for n in name.split()])
     return f"Привет, {new_name}"
