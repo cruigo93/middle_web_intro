@@ -1,7 +1,7 @@
 repos:
--   repo: local
+  - repo: local
     hooks:
-    -   id: flake8
+      - id: flake8
         name: flake8
         description: wemake-python-styleguide enforcement
         entry: flake8

@@ -1,5 +1,5 @@
 import pytest
-from main import *
+from main import Greeting
 
 
 @pytest.mark.parametrize('name,expected', [('Никита', 'Привет, Никита'), ('Ольга', 'Привет, Ольга')],)
