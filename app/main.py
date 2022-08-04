@@ -9,7 +9,8 @@ def Greeting(name: str) -> str:
         name: Имя пользователя
 
     Returns:
-        int: Текст приветствия
+        str: Текст приветствия
     """
+    new_name = " ".join([n[0].upper() + n[1:] for n in name.split()])
     # pprint.pprint(name.lower())
-    return 'Привет, name'
+    return f"Привет, {new_name}"
